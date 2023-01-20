@@ -45,17 +45,17 @@ You can create one or more new directories within your current working directory
 ### cd
 To navigate into one of these new directories, run the cd command (which stands for “change directory”) and specify the directory’s name:
 ```bash
-cd /home/sam/test2
+   cd /home/sam/test2
 ```
 
 Note: In Linux, a tilde (~) is shorthand for the home directory of the user you’re logged in as. Knowing this, you could alternatively write the previous command like this and it would achieve the same result:
 ```bash
-cd ~/test2
+   cd ~/test2
 ```
 
 Additionally, you can specify .. to change to the directory one level up in your path. To get back to your original directory:
 ```bash
-cd ..
+   cd ..
 ```
 
 ### File Manipulation
@@ -64,27 +64,27 @@ You cannot use cd to interact with files; cd stands for “change directory”, 
 ### touch
 One way to create a file is with the touch command. To create a new file called file.txt:
 ```bash
-touch file.txt
+   touch file.txt
 ```
 This creates an empty file with the name file.txt in your current working directory. The contents of this file are empty.
 
 ### mv
 If you decide to rename file.txt later on, you can do so with the mv command:
 ```bash
-mv file.txt newfile.txt
+   mv file.txt newfile.txt
 ```
 mv stands for “move” and it can move a file or directory from one place to another. By specifying the original file, file.txt, you can “move” it to a new location in the current working directory, thereby renaming it.
 ### cp
 It is also possible to copy a file to a new location with the cp command. If we want to bring back file.txt but keep newfile.txt, you can make a copy of newfile.txt named file.txt like this:
 ```bash
-cp newfile.txt file.txt
+   cp newfile.txt file.txt
 ```
 As you may have guessed, cp is short for “copy”. By copying newfile.txt to a new file called file.txt, you have replicated the original file in a new file with a different name.
 
 ### cat 
 The cat command prints the contents of a specified file to your system’s output. Try running cat and pass the file.txt file you just edited as an argument:
 ```bash
-cat file.txt
+   cat file.txt
 ```
 This will print out the entire contents of file.txt to the terminal.
 Using cat to view file contents can be unwieldy and difficult to read if the file is particularly long. As an alternative, you can use the less command which will allow you to paginate the output.
@@ -92,7 +92,7 @@ Using cat to view file contents can be unwieldy and difficult to read if the fil
 ### less
 Use less to view the contents of the file.txt file, like this:
 ```bash
-less file.txt
+   less file.txt
 ```
 This will also print the contents of file.txt, but one terminal page at a time beginning at the start of the file. You can use the spacebar to advance a page, or the arrow keys to go up and down one line at a time.
 
@@ -101,22 +101,22 @@ Press q to quit out of less.
 ### rm 
 Finally, to delete the file.txt file, pass the name of the file as an argument to rm:
 ```bash
-rm file.txt
+   rm file.txt
 ```
 Note: Without other options, the rm command (which stands for “remove”) cannot be used to delete directories. However, it does include the -d flag which allows you to delete empty directories:
 
 ```bash
-rm -d directory
+   rm -d directory
 ```
 You can also remove empty directories with the rmdir command:
 
 ```bash
-rmdir directory
+   rmdir directory
 ```
 If you want to delete a directory that isn’t empty, you can run rm with the -r flag. This will delete the specified directory along with of its contents, including any files and subdirectories:
 
 ```bash
-rm -r directory
+   rm -r directory
 ```
 However, because deleting content is a permanent action, you should only run rm with the -r option if you’re certain that you want to delete the specified directory.
 
@@ -125,5 +125,5 @@ However, because deleting content is a permanent action, you should only run rm 
 ### man 
 If your question has to do with a specific Linux command, the manual pages offer detailed and insightful documentation for nearly every command. To see the man page for any command, pass the command’s name as an argument to the man command:
 ```bash
-man command
+  man command
 ```
